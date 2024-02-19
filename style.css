@@ -38,4 +38,69 @@ h2 {
     margin-bottom: 10px;
 }
 
-/* Add more styling as needed */
+.products-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product-item {
+    width: 30%; /* Adjust based on your layout preference */
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px; /* Optional: for rounded corners */
+    background-color: #fff;
+    padding: 16px;
+    text-align: center; /* Center the text */
+}
+
+.product-item img {
+    width: 100%; /* Make the image fill the container */
+    border-radius: 10px 10px 0 0; /* Rounded corners for the top of the image */
+}
+
+.product-item h3 {
+    margin: 10px 0;
+}
+
+.product-item p {
+    color: #555; /* Dark gray color for the text */
+}
+
+.product-item button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    background-color: #0779e4; /* Example button color */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.product-item button:hover {
+    background-color: #0056b3; /* Darker shade for hover effect */
+}
+
+.product-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .product-item {
+        width: 45%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .product-item {
+        width: 90%; /* Full width on very small screens */
+    }
+}
+
