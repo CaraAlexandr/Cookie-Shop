@@ -9,56 +9,86 @@
 </head>
 <body>
 <header>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#products">Products</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <div class="container">
+        <h1>Your Cookie Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
 </header>
 
-<section id="about">
-    <h2>About Our Cookie Shop</h2>
-    <p>Description of the shop, history, mission, etc.</p>
+<section id="hero">
+    <div class="container">
+        <h2>Welcome to Our Cookie Shop</h2>
+        <p>Discover the taste of happiness with our freshly baked cookies.</p>
+        <a href="#products" class="btn">Explore Now</a>
+    </div>
 </section>
 
-<section id="products">
+<section id="about" class="container">
+    <h2>About Our Cookie Shop</h2>
+    <p>Indulge in the sweetness of tradition and taste at Our Cookie Shop. Established in [Year], our mission has been to deliver homemade, heartwarming cookies right to your doorstep. Each batch is baked with love, using time-honored recipes and the finest ingredients. Join us on a delicious journey through our history and discover the passion behind every bite.</p>
+</section>
+
+<section id="products" class="container">
     <h2>Our Signature Cookies</h2>
     <div class="products-container">
+        <!-- Product items will be styled in CSS for a nicer layout -->
         <div class="product-item">
             <img src="https://handletheheat.com/wp-content/uploads/2020/10/BAKERY-STYLE-CHOCOLATE-CHIP-COOKIES-9-637x637-1.jpg" alt="Chocolate Chip Cookies">
             <h3>Chocolate Chip</h3>
-            <p>Classic cookies loaded with chocolate chips.</p>
+            <p>Classic cookies loaded with chocolate chips, perfect for any time of the day.</p>
             <button>Learn More</button>
         </div>
         <div class="product-item">
             <img src="https://www.allrecipes.com/thmb/Wbb4FrsMVyLameKPWMyYAamP7cc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/24445-chewy-chocolate-chip-oatmeal-cookies-DDMFS-4x3-4e97a758a98640759903569ef637ac18.jpg" alt="Oatmeal Raisin Cookies">
             <h3>Oatmeal Raisin</h3>
-            <p>Hearty oatmeal cookies dotted with juicy raisins.</p>
+            <p>Hearty oatmeal cookies dotted with juicy raisins, offering a wholesome treat.</p>
             <button>Learn More</button>
         </div>
     </div>
 </section>
 
-<section id="testimonials">
+<section id="testimonials" class="container">
     <h2>Customer Testimonials</h2>
     <div class="testimonial-list">
-        <!-- List testimonials here -->
+        <blockquote>
+            "Absolutely delicious! These cookies remind me of my grandmother's baking. A must-try for anyone with a sweet tooth." - Jane Doe
+        </blockquote>
+        <blockquote>
+            "The best chocolate chip cookies I've ever had. They were perfectly crispy on the outside and chewy on the inside." - John Smith
+        </blockquote>
     </div>
 </section>
 
-<section id="contact">
+<section id="contact" class="container">
     <h2>Contact Us</h2>
     <form>
-        <!-- Contact form fields -->
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
         <input type="submit" value="Send Message">
     </form>
 </section>
 
 <footer>
-    <p>Copyright © Your Cookie Shop 2024</p>
+    <div class="container">
+        <p>Connect with us:</p>
+        <ul>
+            <li><a href="http://www.facebook.com/yourcookieshop">Facebook</a></li>
+            <li><a href="http://www.instagram.com/yourcookieshop">Instagram</a></li>
+            <li><a href="http://www.twitter.com/yourcookieshop">Twitter</a></li>
+        </ul>
+        <p>Copyright © Your Cookie Shop 2024</p>
+    </div>
 </footer>
 </body>
 </html>
