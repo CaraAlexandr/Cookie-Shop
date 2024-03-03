@@ -8,6 +8,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div id="mascot" style="display:none;">
+    <img src="img/mascot.png" alt="Mascot" id="mascotImage">
+</div>
+
 <header>
     <div class="container">
         <h1>Your Cookie Shop</h1>
@@ -79,6 +83,25 @@
     </div>
 </section>
 
+<section id="mobile-prices" class="container mobile-only">
+    <h2>Cookie Prices</h2>
+    <div class="price-list">
+        <div class="price-item">
+            <h3>Chocolate Chip</h3>
+            <p>$5 per dozen</p>
+        </div>
+        <div class="price-item">
+            <h3>Oatmeal Raisin</h3>
+            <p>$6 per dozen</p>
+        </div>
+        <div class="price-item">
+            <h3>Custom Mix</h3>
+            <p>$8 per dozen</p>
+        </div>
+    </div>
+</section>
+
+
 <section id="contact" class="container">
     <h2>Contact Us</h2>
     <form>
@@ -103,5 +126,10 @@
         <p>Copyright © Your Cookie Shop 2024</p>
     </div>
 </footer>
+<script>
+    setTimeout(() => {
+        document.getElementById('mascot').style.display = 'flex';
+    }, 5000);
+</script>
 </body>
 </html>
