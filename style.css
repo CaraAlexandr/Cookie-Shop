@@ -195,15 +195,32 @@ input[type="submit"]:hover {
     justify-content: center;
     flex-direction: column;
     z-index: 50;
+    cursor: pointer;
+}
+
+.mascot-message {
+    display: none;
+    position: absolute;
+    bottom: 120%;
+    right: 0;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 100;
+    transition: display 0.5s ease;
+}
+
+#mascot:hover .mascot-message {
+    display: block;
 }
 
 #mascot img {
     width: 100px;
     animation: spin 3s linear infinite;
-}
-
-#mascot:hover p {
-    display: block;
 }
 
 @keyframes mascotEntrance {
